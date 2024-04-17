@@ -11,7 +11,7 @@ import os
 def consultar_e_enviar_email():  
     # Autenticação no Spanner
     credentials = service_account.Credentials.from_service_account_file(
-        r"Local do arquivo de autebtucação .json",
+        r"Local do arquivo de autenticação .json",
         scopes=["https://www.googleapis.com/auth/cloud-platform"],
     )
     client = spanner.Client(project="br-digitalcomm-prod", credentials=credentials)
